@@ -13,14 +13,14 @@
 
   <link rel="stylesheet" href="/assets/css/main.css">
   <!-- prod -->
-  <!-- <link rel="stylesheet" href="/assets/css/tailwindstyle.css"> -->
+  <link rel="stylesheet" href="/assets/css/tailwindstyle.css">
 
   <title>My Web</title>
 </head>
 <body>
-  <div class="fixed top-0 left-0 w-full h-full">
-    <div class="fixed left-0 h-full w-1/2 bg-gradient-to-br from-[#00030E] to-[#010719]"></div>
-    <div class="fixed h-full right-0 w-1/2 bg-[#23243D]"></div>
+  <div class="">
+    <div class="fixed left-0 h-full w-1/2 bg-gradient-to-br from-primary to-secondary"></div>
+    <div class="fixed h-full right-0 w-1/2 bg-quinary"></div>
     <div class="fixed left-0 w-full object-cover">
       <img 
         src="assets/img/bg-stars.png" 
@@ -38,9 +38,9 @@
       />
     </div>
 
-    <div class="h-screen flex items-center relative z-50 gap-24">
-      <div class="w-1/2">
-        <div class="w-[530px] p-5 ml-auto text-center text-white">
+    <div class="lg:grid lg:grid-cols-2 relative z-50 gap-24">
+      <div class="lg:h-screen flex items-center lg:sticky top-0 bg-primary lg:bg-transparent">
+        <div class="w-full px-8 xl:w-[530px] p-5 ml-auto text-center text-white">
           <div class="w-[153px] h-[153px] rounded-full overflow-hidden inline-block mb-3">
             <img 
               src="assets/img/sebastian-castro-giraldo.png" 
@@ -52,89 +52,222 @@
           <div class="flex flex-wrap gap-y-5 opacity-85">
             <h1 class="font-medium text-lg w-full">Sebastian Castro Giraldo</h1>
   
-            <p>I am a Frontend Developer with more than 5 years of expertise, ensuring clean and efficient code that adheres to best practices and web standards.</p>
+            <p class="text-sm">I am a Frontend Developer with more than 5 years of expertise, ensuring clean and efficient code that adheres to best practices and web standards.</p>
   
-            <p>I enjoy coding, collaborating with teams to develop incredible web applications and learning new things to improve myself.</p>
+            <p class="text-sm">I enjoy coding, collaborating with teams to develop incredible web applications and learning new things to improve myself.</p>
   
-            <p class="font-semibold italic">I am seeking opportunities to learn and grow as a developer. Nothing motivates me more than being involved in interesting projects where I can learn, contribute, and be surrounded by an amazing work environment.</p>
+            <p class="text-sm font-semibold italic">I am seeking opportunities to learn and grow as a developer. Nothing motivates me more than being involved in interesting projects where I can learn, contribute, and be surrounded by an amazing work environment.</p>
+
+            <div class="flex gap-2 justify-center w-full">
+              <div class="w-[22px] h-[22px] rounded-full bg-[#3572CB]">
+                <a href="https://twitter.com/sebastrog" target="_blank">
+                  <img 
+                    src="assets/img/icon-twitter.svg"
+                    alt="social profile" 
+                    class="w-[14px] h-full object-contain object-center m-auto"
+                  />
+                </a>
+              </div>
+              
+              <div class="w-[22px] h-[22px] rounded-full bg-[#3572CB]">
+                <a href="https://www.linkedin.com/in/sebastrog/" target="_blank">
+                  <img 
+                    src="assets/img/icon-linkedin.svg"
+                    alt="social profile" 
+                    class="w-[12px] h-full object-contain object-center m-auto"
+                  />
+                </a>
+              </div>
+            </div>
           </div>
 
         </div>
       </div>
-      <div class="w-1/2">
-        <div class="w-[530px] text-white pl-8 pr-3">
 
-          <div>
+      <div class="lg:flex items-center py-8 lg:py-0 bg-tertiary">
+        <div class="w-full xl:w-[530px] text-white pl-8 pr-10 lg:pl-8 lg:pr-3">
+          <div class="mb-5">
             <div class="relative">
-              <div class="border border-[#676987] rounded-tl-2xl rounded-tr-sm rounded-br-2xl rounded-bl-sm absolute w-full h-full top-2 left-2 z-10"></div>
-              <div class="w-full h-full border border-[#676987] rounded-tl-2xl rounded-tr-sm rounded-br-2xl rounded-bl-sm z-20 p-4 bg-[#23243D] relative text-[#4E846E]">
-                <h3 class="text-sm"><b>I have</b> worked as a frontend developer for maintenance and development of new features using React JS.</h3>
+              <div class="border border-sixth rounded-tl-2xl rounded-tr-sm rounded-br-2xl rounded-bl-sm absolute w-full h-full top-2 left-2 z-10"></div>
+              <div class="w-full h-full border border-sixth rounded-tl-2xl rounded-tr-sm rounded-br-2xl rounded-bl-sm z-20 p-4 bg-quinary relative text-quaternary">
+                <div class="absolute top-1/2 -mt-[13px] -left-[13px] w-[26px] h-[26px] border border-sixth rounded-full bg-tertiary z-30 p-[.3rem]">
+                  <img 
+                    src="assets/img/icon-tool.svg"
+                    alt="icon" 
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <div class="pl-3">
+                  <h3 class="text-sm"><b>I have</b> worked as a frontend developer for maintenance and development of new features using React JS.</h3>
+                </div>
               </div>
             </div>
             
-            <div class="grid grid-cols-2 gap-3 mt-5 pl-2 justify-center">
+            <div class="flex flex-wrap gap-3 mt-5 pl-2">
               <div>
-                <div class="border border-[#676987] inline-block text-xs rounded-tl-2xl rounded-tr-sm rounded-br-2xl rounded-bl-sm z-20 p-2 bg-[#23243D] relative text-[#4E846E]">
+                <div class="border border-sixth inline-block text-xs rounded-tl-2xl rounded-tr-sm rounded-br-2xl rounded-bl-sm z-20 p-2 bg-quinary relative text-quaternary">
                   Dashboard > Clients control panel
                 </div>
               </div>
 
               <div>
-                <div class="border border-[#676987] inline-block text-xs rounded-tl-2xl rounded-tr-sm rounded-br-2xl rounded-bl-sm z-20 p-2 bg-[#23243D] relative text-[#4E846E]">
+                <div class="border border-sixth inline-block text-xs rounded-tl-2xl rounded-tr-sm rounded-br-2xl rounded-bl-sm z-20 p-2 bg-quinary relative text-quaternary">
                   ZeroStock > Dropshipping platform
                 </div>  
               </div>
 
               <div>
-                <div class="border border-[#676987] inline-block text-xs rounded-tl-2xl rounded-tr-sm rounded-br-2xl rounded-bl-sm z-20 p-2 bg-[#23243D] relative text-[#4E846E]">
+                <div class="border border-sixth inline-block text-xs rounded-tl-2xl rounded-tr-sm rounded-br-2xl rounded-bl-sm z-20 p-2 bg-quinary relative text-quaternary">
                   Outreach Tool > Mass email sender
                 </div>
               </div>
 
               <div>
-                <div class="border border-[#676987] inline-block text-xs rounded-tl-2xl rounded-tr-sm rounded-br-2xl rounded-bl-sm z-20 p-2 bg-[#23243D] relative text-[#4E846E]">
+                <div class="border border-sixth inline-block text-xs rounded-tl-2xl rounded-tr-sm rounded-br-2xl rounded-bl-sm z-20 p-2 bg-quinary relative text-quaternary">
                   cloudFleet > Truck fleet
                 </div>
               </div>
             </div>
+          </div>
 
-            <!-- <div class="flex flex-wrap mt-5  justify-center gap-2">
-              <div class="border border-[#676987] text-xs rounded-tl-2xl rounded-tr-sm rounded-br-2xl rounded-bl-sm z-20 p-2 bg-[#23243D] relative text-[#4E846E]">
-                Dashboard > Clients control panel
+          <div class="mb-5">
+            <div class="relative">
+              <div class="border border-sixth rounded-tl-2xl rounded-tr-sm rounded-br-2xl rounded-bl-sm absolute w-full h-full top-2 left-2 z-10"></div>
+              <div class="w-full h-full border border-sixth rounded-tl-2xl rounded-tr-sm rounded-br-2xl rounded-bl-sm z-20 p-4 bg-quinary relative text-quaternary">
+                <div class="absolute top-1/2 -mt-[13px] -left-[13px] w-[26px] h-[26px] border border-sixth rounded-full bg-tertiary z-30 p-[.3rem]">
+                  <img 
+                    src="assets/img/icon-tool.svg"
+                    alt="icon" 
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <div class="pl-3">
+                  <h3 class="text-sm"><b>I have</b> developed and integrated pages using javascript, jquery, good SEO practices and more.</h3>
+                </div>
               </div>
-              <div class="border border-[#676987] text-xs rounded-tl-2xl rounded-tr-sm rounded-br-2xl rounded-bl-sm z-20 p-2 bg-[#23243D] relative text-[#4E846E]">
-                ZeroStock > Dropshipping platform
+            </div>
+            
+            <div class="flex flex-wrap gap-3 mt-5 pl-2">
+              <div>
+                <div class="border border-sixth inline-block text-xs rounded-tl-2xl rounded-tr-sm rounded-br-2xl rounded-bl-sm z-20 p-2 bg-quinary relative text-quaternary">
+                  Publicize > PR Company
+                </div>
               </div>
-              <div class="border border-[#676987] text-xs rounded-tl-2xl rounded-tr-sm rounded-br-2xl rounded-bl-sm z-20 p-2 bg-[#23243D] relative text-[#4E846E]">
-                Outreach Tool > Mass email sender
+
+              <div>
+                <div class="border border-sixth inline-block text-xs rounded-tl-2xl rounded-tr-sm rounded-br-2xl rounded-bl-sm z-20 p-2 bg-quinary relative text-quaternary">
+                  Telemedellín > Local TV Network
+                </div>  
               </div>
-              <div class="border border-[#676987] text-xs rounded-tl-2xl rounded-tr-sm rounded-br-2xl rounded-bl-sm z-20 p-2 bg-[#23243D] relative text-[#4E846E]">
-                cloudFleet > Truck fleet
+
+              <div>
+                <div class="border border-sixth inline-block text-xs rounded-tl-2xl rounded-tr-sm rounded-br-2xl rounded-bl-sm z-20 p-2 bg-quinary relative text-quaternary">
+                  Frisby > Restaurant franchise
+                </div>
               </div>
-            </div> -->
+
+              <div>
+                <div class="border border-sixth inline-block text-xs rounded-tl-2xl rounded-tr-sm rounded-br-2xl rounded-bl-sm z-20 p-2 bg-quinary relative text-quaternary">
+                  The Tech Panda
+                </div>
+              </div>
+
+              <div>
+                <div class="border border-sixth inline-block text-xs rounded-tl-2xl rounded-tr-sm rounded-br-2xl rounded-bl-sm z-20 p-2 bg-quinary relative text-quaternary">
+                  The Sociable > Blog
+                </div>
+              </div>
+
+              <div>
+                <div class="border border-sixth inline-block text-xs rounded-tl-2xl rounded-tr-sm rounded-br-2xl rounded-bl-sm z-20 p-2 bg-quinary relative text-quaternary">
+                  Latam > News Blog
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-5">
+            <div class="relative">
+              <div class="border border-sixth rounded-tl-2xl rounded-tr-sm rounded-br-2xl rounded-bl-sm absolute w-full h-full top-2 left-2 z-10"></div>
+              <div class="w-full h-full border border-sixth rounded-tl-2xl rounded-tr-sm rounded-br-2xl rounded-bl-sm z-20 p-4 bg-quinary relative text-quaternary">
+                <div class="absolute top-1/2 -mt-[13px] -left-[13px] w-[26px] h-[26px] border border-sixth rounded-full bg-tertiary z-30 p-[.3rem]">
+                  <img 
+                    src="assets/img/icon-paint.svg"
+                    alt="icon" 
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <div class="pl-3">
+                  <h3 class="text-sm"><b>I have</b> used Sass, Bootstrap, Tailwind, and Material UI to build styles in websites and web apps I’ve worked for.</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-5">
+            <div class="relative">
+              <div class="border border-sixth rounded-tl-2xl rounded-tr-sm rounded-br-2xl rounded-bl-sm absolute w-full h-full top-2 left-2 z-10"></div>
+              <div class="w-full h-full border border-sixth rounded-tl-2xl rounded-tr-sm rounded-br-2xl rounded-bl-sm z-20 p-4 bg-quinary relative text-quaternary">
+                <div class="absolute top-1/2 -mt-[13px] -left-[13px] w-[26px] h-[26px] border border-sixth rounded-full bg-tertiary z-30 p-1">
+                  <img 
+                    src="assets/img/icon-team.svg"
+                    alt="icon" 
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <div class="pl-3">
+                  <h3 class="text-sm"><b>I have</b> experience collaborating with teams and using agile methodologies such as Scrum and Kanban.</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="relative">
+              <div class="border border-sixth rounded-tl-2xl rounded-tr-sm rounded-br-2xl rounded-bl-sm absolute w-full h-full top-2 left-2 z-10"></div>
+              <div class="w-full h-full border border-sixth rounded-tl-2xl rounded-tr-sm rounded-br-2xl rounded-bl-sm z-20 p-4 bg-quinary relative text-quaternary">
+                <div class="absolute top-1/2 -mt-[13px] -left-[13px] w-[26px] h-[26px] border border-sixth rounded-full bg-tertiary z-30 p-1">
+                  <img 
+                    src="assets/img/icon-github.svg"
+                    alt="icon" 
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <div class="pl-3">
+                  <h3 class="text-sm"><b>I have</b> used GitHub's branching system, working with teams to maintain code integrity.</h3>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
+        <div class="mt-8 lg:mt-0 text-center lg:fixed bottom-2 left-2 text-quaternary text-sm opacity-50">space powered by <a href="https://twitter.com/sebastrog" target="_blank"><b>sebastrog</b></a> </div>
       </div>
     </div>
   </div>
 
   <script>
-    const img1 = document.getElementById('img1');
-    const img2 = document.getElementById('img2');
+    const windowWitdh = window.innerWidth;
 
-    document.addEventListener('mousemove', function(event) {
-      // Obtener la posición del mouse dentro de la ventana
-      const posX = event.clientX;
-      const posY = event.clientY;
+    if(windowWitdh > 1024) {
+      const img1 = document.getElementById('img1');
+      const img2 = document.getElementById('img2');
+  
+      document.addEventListener('mousemove', function(event) {
+        // Obtener la posición del mouse dentro de la ventana
+        const posX = event.clientX;
+        const posY = event.clientY;
+  
+        // Calcular la cantidad de movimiento para cada imagen
+        const moveX = posX / window.innerWidth * 20 - 10;  // Ajusta la velocidad horizontal
+        const moveY = posY / window.innerHeight * 20 - 10; // Ajusta la velocidad vertical
+  
+        // Aplicar el movimiento a las imágenes
+        img1.style.transform = 'translate(' + moveX + 'px, ' + moveY + 'px)';
+        img2.style.transform = 'translate(' + -moveX + 'px, ' + -moveY + 'px)';
+      });
+    }
 
-      // Calcular la cantidad de movimiento para cada imagen
-      const moveX = posX / window.innerWidth * 20 - 10;  // Ajusta la velocidad horizontal
-      const moveY = posY / window.innerHeight * 20 - 10; // Ajusta la velocidad vertical
-
-      // Aplicar el movimiento a las imágenes
-      img1.style.transform = 'translate(' + moveX + 'px, ' + moveY + 'px)';
-      img2.style.transform = 'translate(' + -moveX + 'px, ' + -moveY + 'px)';
-  });
   </script>
 </body>
 </html>
